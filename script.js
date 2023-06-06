@@ -8,7 +8,7 @@ function getComputerChoice(random) {
   return "Scissor";
  }
 }
- 
+
 
 // This function plays a single round of rock paper scissor.
 function playRound(playerSelection, computerSelection) {
@@ -46,13 +46,12 @@ function playRound(playerSelection, computerSelection) {
 }
  const playerSelection = 'Scissor';
  const computerSelection = getComputerChoice(Math.random());
-
  console.log(playRound(playerSelection,computerSelection));
 
 
  function game() {
   
-  for(i = 0; i <= 5; i++) {
-    
+  for(let i = 0; i <= 5; i++) {
+    playRound()
   }
  }
