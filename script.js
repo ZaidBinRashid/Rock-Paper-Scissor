@@ -13,45 +13,49 @@ function getComputerChoice(random) {
 // This function plays a single round of rock paper scissor.
 function playRound(playerSelection, computerSelection) {
 
- if (computerSelection === 'Rock' && playerSelection === 'Scissor') {
+ if (computerSelection === 'Rock' && playerSelection === 'scissor') {
   return 'You lose! Rock beats Scissor';
  } 
- else if (computerSelection === 'Rock' && playerSelection === 'Paper') {
+ else if (computerSelection === 'Rock' && playerSelection === 'paper') {
   return 'You won! Paper beats Rock';
  } 
- else if (computerSelection === 'Rock' && playerSelection === 'Rock') {
+ else if (computerSelection === 'Rock' && playerSelection === 'rock') {
   return 'Tie!';
  } 
- else if (computerSelection === 'Paper' && playerSelection === 'Rock') {
+ else if (computerSelection === 'Paper' && playerSelection === 'rock') {
   return 'You lose! Paper beats Rock';
  } 
- else if (computerSelection === 'Paper' && playerSelection === 'Scissor') {
+ else if (computerSelection === 'Paper' && playerSelection === 'scissor') {
   return 'You won! Scissor beats Paper';
  } 
- else if (computerSelection === 'Paper' && playerSelection === 'Paper') {
+ else if (computerSelection === 'Paper' && playerSelection === 'paper') {
   return 'Tie!';
  } 
- else if (computerSelection === 'Scissor' && playerSelection === 'Paper') {
+ else if (computerSelection === 'Scissor' && playerSelection === 'paper') {
   return 'You lose! Scissor beats Paper';
  } 
- else if (computerSelection === 'Scissor' && playerSelection === 'Rock') {
+ else if (computerSelection === 'Scissor' && playerSelection === 'rock') {
   return 'You won! Rock beats Scissor';
  } 
- else if (computerSelection === 'Scissor' && playerSelection === 'Scissor') {
+ else if (computerSelection === 'Scissor' && playerSelection === 'scissor') {
   return 'Tie!';
  }
  
  
  
 }
- const playerSelection = 'Scissor';
- const computerSelection = getComputerChoice(Math.random());
- console.log(playRound(playerSelection,computerSelection));
+//  const playerSelection = 'Scissor';
+//  const computerSelection = getComputerChoice(Math.random());
+//  console.log(playRound(playerSelection,computerSelection));
 
 
  function game() {
   
-  for(let i = 0; i <= 5; i++) {
-    playRound()
+  for(let i = 1; i <= 5; i++) {
+    const playerSelection = 'rock';
+    const computerSelection = getComputerChoice(Math.random());
+    console.log(playRound(playerSelection,computerSelection));
   }
  }
+
+ game();
